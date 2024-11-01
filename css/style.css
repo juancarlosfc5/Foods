@@ -5,11 +5,8 @@
 4 #000
 5 #ffefe8
 6 #2c2b47 color menu movil
+7 #ffefe8 fondo sección 
 */
-
-*{
-    scroll-behavior: smooth;
-}
 
 *,
 *::before,
@@ -25,41 +22,68 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #1e1d2b;
   color: #fff;
+  display: block;
 }
 
 .section{
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 95vw;
 }
 
 .logo{
-    color: #ff702a;
-    font-family:'Poppins', sans-serif;
+  color: #ff702a;
+  font-family:'Poppins', sans-serif;
 }
 
 .title{
-    color: #ff702a;
-    font-size: 70px;
+  color: #ff702a;
+  font-size: 70px;
+  margin-top: 40%;
 }
 
 .button{
-    background-color: #ff702a;
-    color: #fff;
-    font-size: 20px;
-    border: none;
-    padding: 5px;
+  background-color: #ff702a;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  padding: 5px;
 }
 
+.textL{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
 
+.imgR{
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+
+.imgL{
+  position: absolute;
+  left: 10%;
+  top: 110%;
+}
+
+.textR{
+  position: absolute;
+  left: 60%;
+  top: 120%;
+}
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 10px;
   background-color: #2c2b47;
   color: white;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
 }
 
 /* responsive */
